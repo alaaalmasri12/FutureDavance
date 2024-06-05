@@ -1,0 +1,58 @@
+﻿
+@{
+    ViewData["Title"] = "SIGNIN";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model LoginRequestDTO
+<div class="wrapper">
+    <div id="content" class="site-content mt-5">
+        <div id="primary" class="content-area">
+            <main id="main" class="site-main">
+                <div class="signin-main">
+                    <div class="container">
+                        <div class="">
+                            <div class="">
+                                <div class="company-info signin-register">
+                                    <div class="col-md-12 col-md-offset-1 border-dark-left">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="company-detail bg-dark margin-left p-5 mb-5">
+                                                    <div class="signin-head pb-3">
+                                                        <h2 class="text-white">Sign in</h2>
+                                                        <span class="underline left"></span>
+                                                    </div>
+                                                    <form class="login" asp-action="LoginForm" method="post">
+                                                        <p class="form-row form-row-first input-required">
+                                                            <input asp-for="Email" type="text" placeholder="Enter your Email" class="form-control" required>
+                                                            <span asp-validation-for="Email" class="text-danger"></span>
+
+                                                        </p>
+                                                        <p class="form-row form-row-last input-required">
+                                                            <input asp-for="password" type="password" class="form-control" placeholder="password" required>
+                                                            <span asp-validation-for="password" class="text-danger"></span>
+
+                                                        </p>
+                                                        <div class="text" style="margin-bottom:20px;">
+                                                            <h5 style="color:white;">Dont  have an account? <a style="color:blue" asp-area="User" asp-controller="Security" asp-action="RegisterForm">Register now</a></h5>
+                                                        </div>
+                                                        <div class="clear"></div>
+                                                        <button type="submit"  class="btn btn-primary" fdprocessedid="fmz12g">Login</button>                                                      
+                                                        <div class="clear"></div>
+                                                        <div class="validation-summary-errors" style="margin-top:20px;">
+                                                            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                                                        </div>
+                                                    </form>
+                                                  
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,82 @@
+[
+  {
+    "ContainingType": "Futureadvance.API.Controllers.UserController",
+    "Method": "Deleteuser",
+    "RelativePath": "api/userAuth/Deleteuser",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Futureadvance.API.Controllers.UserController",
+    "Method": "GetAllusers",
+    "RelativePath": "api/userAuth/GetAllusers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "UserID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Futureadvance.API.Controllers.UserController",
+    "Method": "Login",
+    "RelativePath": "api/userAuth/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginRequestDTO",
+        "Type": "Futureadvance.Core.Models.DTO.LoginRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Futureadvance.API.Controllers.UserController",
+    "Method": "Register",
+    "RelativePath": "api/userAuth/Register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "registeritionRequestDto",
+        "Type": "Futureadvance.Core.Models.DTO.RegisteritionRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Futureadvance.API.Controllers.UserController",
+    "Method": "Updateuser",
+    "RelativePath": "api/userAuth/updateuser",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "registeritionRequestDto",
+        "Type": "Futureadvance.Core.Models.DTO.UpdateuserDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

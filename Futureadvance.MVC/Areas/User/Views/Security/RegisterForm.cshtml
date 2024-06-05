@@ -1,0 +1,59 @@
+﻿@{
+    ViewData["Title"] = "Register";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model RegisteritionRequestDto
+
+<div id="content" class="site-content">
+    <div id="primary" class="content-area">
+        <main id="main" class="site-main">
+            <div class="signin-main">
+                <div class="container">
+                    <div class="woocommerce">
+                        <div class="woocommerce-login">
+                            <div class="company-info signin-register mt-5">
+                                <div class="col-md-12 border-dark new-user">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="company-detail bg-dark margin-left p-5 mb-5">
+                                                <div class="new-user-head">
+                                                    <h2 class="text-white pb-3">Create New Account</h2>
+                                                    <span class="underline left"></span>
+                                                </div>
+                                                <form asp-action="RegisterForm" method="post" enctype="multipart/form-data">
+                                                   
+                                                   
+                                                    <p class="form-row form-row-first input-required">
+                                                        <input asp-for="Email" type="text" class="form-control" placeholder="Enter your email" required>
+                                                        <span asp-validation-for="Email" class="text-danger"></span>
+
+                                                    </p>
+                                                   
+                                                    <p class="form-row form-row-first input-required">
+                                                        <input asp-for="Password" class="form-control" type="password" placeholder="Create password" required>
+                                                        <span asp-validation-for="Password" class="text-danger"></span>
+                                                    </p>
+                                                    <p class="form-row form-row-first input-required">
+                                                        <input asp-for="ConfirmPassword" class="form-control" type="password" placeholder="Confirm password" required>
+                                                        <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                                                    </p>
+                                                  
+                                                    <div class="clear"></div>
+                                                    <button type="submit" class="btn btn-primary mb-3">Signup</button>
+                                                    <div class="text">
+                                                        <h5 class="text-white">Already have an account? <a style="color:blue" asp-area="User" asp-controller="Security" asp-action="LoginForm">Login now</a></h5>
+                                                    </div>
+                                                    <div class="clear"></div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</div>

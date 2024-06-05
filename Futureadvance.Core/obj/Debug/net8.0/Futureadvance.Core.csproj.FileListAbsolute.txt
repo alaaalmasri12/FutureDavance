@@ -1,0 +1,12 @@
+D:\FutureDavance\Futureadvance.Core\bin\Debug\net8.0\Futureadvance.Core.deps.json
+D:\FutureDavance\Futureadvance.Core\bin\Debug\net8.0\Futureadvance.Core.dll
+D:\FutureDavance\Futureadvance.Core\bin\Debug\net8.0\Futureadvance.Core.pdb
+D:\FutureDavance\Futureadvance.Core\obj\Debug\net8.0\Futureadvance.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\FutureDavance\Futureadvance.Core\obj\Debug\net8.0\Futureadvance.Core.AssemblyInfoInputs.cache
+D:\FutureDavance\Futureadvance.Core\obj\Debug\net8.0\Futureadvance.Core.AssemblyInfo.cs
+D:\FutureDavance\Futureadvance.Core\obj\Debug\net8.0\Futureadvance.Core.csproj.CoreCompileInputs.cache
+D:\FutureDavance\Futureadvance.Core\obj\Debug\net8.0\Futureadvance.Core.dll
+D:\FutureDavance\Futureadvance.Core\obj\Debug\net8.0\refint\Futureadvance.Core.dll
+D:\FutureDavance\Futureadvance.Core\obj\Debug\net8.0\Futureadvance.Core.pdb
+D:\FutureDavance\Futureadvance.Core\obj\Debug\net8.0\ref\Futureadvance.Core.dll
+D:\FutureDavance\Futureadvance.Core\obj\Debug\net8.0\Futureadvance.Core.csproj.AssemblyReference.cache

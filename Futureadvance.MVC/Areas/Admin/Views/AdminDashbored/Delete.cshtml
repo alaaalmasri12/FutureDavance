@@ -1,0 +1,94 @@
+﻿@{
+    ViewData["Title"] = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model RegisteritionRequestDto
+<div id="content" class="site-content">
+    <div id="primary" class="content-area">
+        <main id="main" class="site-main">
+            <div class="signin-main">
+                <div class="container">
+                    <div class="woocommerce">
+                        <div class="woocommerce-login">
+                            <div class="company-info signin-register mt-5">
+                                <div class="col-md-12 border-dark new-user">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="company-detail bg-dark margin-left p-5 mb-5">
+                                                <div class="new-user-head">
+                                                    <h2 class="text-white pb-3">User Details</h2>
+                                                    <span class="underline left"></span>
+                                                </div>
+                                                <form asp-action="Deleteuser" method="post" enctype="multipart/form-data">
+                                                    <input type="hidden" name="Id" asp-for="Id" value="@Model.Id" />
+                                                    <p class="form-row form-row-first input-required">
+                                                        <input asp-for="Email" type="text" class="form-control" placeholder="Enter your email" disabled>
+                                                        <span asp-validation-for="Email" class="text-danger"></span>
+
+                                                    </p>
+
+                                                    <p class="form-row form-row-first input-required">
+                                                        <input asp-for="Password" class="form-control" type="password" placeholder="Create password" disabled>
+                                                        <span asp-validation-for="Password" class="text-danger"></span>
+                                                    </p>
+                                                    <p class="form-row form-row-first input-required">
+                                                        <input asp-for="ConfirmPassword" class="form-control" type="password" placeholder="Confirm password" disabled>
+                                                        <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                                                    </p>
+                                                    <select asp-for="Role" name="Role" class="form-control mb-3 mb-3" disabled>
+                                                        <option value="">Select Role</option>
+                                                        @{
+                                                            if (ViewBag.Roles != null)
+                                                            {
+                                                                if (ViewBag.rolesuser.Count > 0)
+                                                                {
+                                                                    @foreach (var role in ViewBag.Roles)
+                                                                    {
+                                                                        if (ViewBag.rolesuser.Count > 0)
+                                                                        {
+                                                                            @foreach (var selectedrole in ViewBag.rolesuser)
+                                                                            {
+                                                                                if (role.Name == selectedrole)
+                                                                                {
+                                                                                    <option selected value="@selectedrole">@selectedrole</option>
+
+                                                                                }
+                                                                                else
+                                                                                {
+                                                                                    <option value="@role">@role</option>
+
+                                                                                }
+                                                                            }
+                                                                        }
+
+                                                                    }
+                                                                }
+                                                                else
+                                                                {
+                                                                    @foreach (var role in ViewBag.Roleslist)
+                                                                    {
+
+                                                                        <option value="@role">@role</option>
+                                                                    }
+                                                                }
+                                                            }
+
+                                                        }
+                                                        }
+                                                        }
+                                                    </select>
+                                                    <div class="clear"></div>
+                                                    <button type="submit" class="btn btn-danger mb-3">delete</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</div>
